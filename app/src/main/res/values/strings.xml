@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpeciesInspector_V2</string>
+    <string name="welcome_message">Welcome to Species Inspector</string>
+    <string name="log_in_button_message">Log in</string>
+    <string name="create_account_button_message">Create Account</string>
+    <string name="create_your_account_title">Create your Account</string>
+</resources>

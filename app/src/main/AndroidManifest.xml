@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpeciesInspector_V2"
+        tools:targetApi="31">
+
+        <activity android:name=".MainMenu"
+            android:exported="true"/>
+        <activity android:name=".MyActivity"
+            android:exported="true"/>
+
+
+
+        <activity android:name=".ProfessionalMyActivity"
+            android:exported="true"/>
+
+        <activity android:name=".ProfileSettings"
+            android:exported="true"/>
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+<!--    </activity>-->
+        <activity android:name=".Donate"
+            android:exported="true"/>
+        <activity android:name=".AppSettings"
+            android:exported="true"/>
+        <activity android:name=".Guides"
+            android:exported="true"/>
+
+        <activity android:name=".Messages"
+            android:exported="true"/>
+
+        <activity android:name=".MyGroups"
+            android:exported="true"/>
+
+
+        <activity android:name=".SpeciesList"
+            android:exported="true"/>
+
+
+        <activity android:name=".InvasivesAttica"
+            android:exported="true"/>
+
+        <activity android:name=".InvasivesCentralGreece"
+            android:exported="true"/>
+
+        <activity android:name=".InvasivesCentralMacedonia"
+            android:exported="true"/>
+
+        <activity android:name=".InvasivesCrete"
+            android:exported="true"/>
+
+        <activity android:name=".InvasivesEasternMacedoniaThrace"
+            android:exported="true"/>
+
+        <activity android:name=".InvasivesEpirus"
+            android:exported="true"/>
+        <activity android:name=".InvasivesIonianIslands"
+            android:exported="true"/>
+        <activity android:name=".InvasivesNorthAegean"
+            android:exported="true"/>
+        <activity android:name=".InvasivesPeloponnese"
+            android:exported="true"/>
+        <activity android:name=".InvasivesSouthAegean"
+            android:exported="true"/>
+        <activity android:name=".InvasivesThessaly"
+            android:exported="true"/>
+        <activity android:name=".InvasivesWesternGreece"
+            android:exported="true"/>
+        <activity android:name=".InvasivesWesternMacedonia"
+            android:exported="true"/>
+
+        <activity android:name=".UsefulKnowledge"
+            android:exported="true"/>
+
+
+        <activity android:name=".LogoutAction"
+            android:exported="true"/>
+
+        <activity
+            android:name=".CreateAccountActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SpeciesInspectorV2App"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SpeciesInspector_V2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
